@@ -52,7 +52,8 @@ void fitTRLumi_TOYS_Cedric(Double_t cutThetae_low = 0, Double_t cutThetae_high =
 
 	//path to the .root files containing the histograms in output from mue.
 	TString job = "";//"job_20-10-14_19_41_54";
-	TString dir = "../Root/results.root";//"~/Scrivania/MUonE/Analysis/mue/test/"+job+"/results.root";
+	//TString dir = "../Root/results.root";//"~/Scrivania/MUonE/Analysis/mue/test/"+job+"/results.root";
+	TString dir = "../mue/test_mesmer_MuE_23-01-11_13:54:01/MuE/results.root";
 	
 	TFile *infile = new TFile(dir);
 	if(infile->IsOpen()) cout<<"input file opened successfully"<<endl;
