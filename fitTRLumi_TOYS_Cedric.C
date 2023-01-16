@@ -53,7 +53,13 @@ void fitTRLumi_TOYS_Cedric(Double_t cutThetae_low = 0, Double_t cutThetae_high =
 	//path to the .root files containing the histograms in output from mue.
 	TString job = "";//"job_20-10-14_19_41_54";
 	//TString dir = "../Root/results.root";//"~/Scrivania/MUonE/Analysis/mue/test/"+job+"/results.root";
-	TString dir = "../mue/test_mesmer_MuE_23-01-11_13:54:01/MuE/results.root";
+	TString dir = 
+	"../mue/test_mesmer_MuE_23-01-11_13:54:01/MuE/results.root";
+
+	TString dir_new = 
+	"../mue/test_mesmer_MuE_23-01-13_15:00:04/MuE/results.root";
+	TFile *infile_new = new TFile(dir_new);
+	
 	
 	TFile *infile = new TFile(dir);
 	if(infile->IsOpen()) cout<<"input file opened successfully"<<endl;
@@ -88,7 +94,8 @@ void fitTRLumi_TOYS_Cedric(Double_t cutThetae_low = 0, Double_t cutThetae_high =
 	dir_templ     = "det/templ/NLO/had/hsn_thmuVsthe_NLO_templ";
 
 	//get the reference histogram
-	TH2D *hn_thmuVsthe_NLO_ref = (TH2D*) infile->Get(dir_reference);
+	//TH2D *hn_thmuVsthe_NLO_ref = (TH2D*) infile->Get(dir_reference);
+	TH2D *hn_thmuVsthe_NLO_ref = (TH2D*) infile_new->Get(dir_reference);
 	
 	//get the template histograms
 	std::vector<TH2D*> hn_thmuVsthe_NLO_templ;
