@@ -60,7 +60,7 @@ cat > fastSim.cfi <<!
 0        # detector resolution model: 0=simplest-2par; 1=Antonio's 3 par
 0        # 0:default; 1:MS only on X plane; 2: polar angle smearing
 0        # true=twosteps: apply multiple scattering in model 0 and intrinsic resolution in a second step
-0.0425   # total material thickness for model 0 (in X0) / 1.5cm Be = 0.0425 X0
+0.0425   #0.042925 #0.0425   # total material thickness for model 0 (in X0) / 1.5cm Be = 0.0425 X0
 0.02     # intr.ang.resol. for model 0 (in mrad)
 0.       # signed bias of station length (um) 
 0.       # uncertainty of station length (um)
