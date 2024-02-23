@@ -43,7 +43,8 @@ const int NORMALIZE = 1;
 
 
 
-void shape_chi2_MultFunc1Par_fitDALep_TOYS_v2(TString angular_cuts, double lumi = 1 /*pb-1*/, int NTOYS = 1000, int iparam = 1211, bool randomSeed = 0) {
+void shape_chi2_MultFunc1Par_fitDALep_TOYS_v2(TString angular_cuts, double lumi = 1, int NTOYS = 1000, int iparam = 1211, bool randomSeed = 0) {
+	/*lumi: pb-1*/
 
 	if(randomSeed) gRandom->SetSeed(time(NULL));
 	
