@@ -132,12 +132,12 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v2(TString angular_cuts, double lumi 
 	MuE::Setup *MuEparams = 0;
 	MuESetup->SetBranchAddress("MuEparams", &MuEparams);
 	MuESetup->GetEntry(0);
-	double Kref   = MuEparams->Kref;
-	double Mref   = MuEparams->Mref;
-	double dKu    = MuEparams->KerrRef;
-	double dMu    = MuEparams->MerrRef;
-	int sigmaLim  = MuEparams->rangeSigma;
-	int sigmaStep = MuEparams->divSigma;
+	double Kref   = 2.3223e-3; //MuEparams->Kref;
+	double Mref   = 511e-6; //MuEparams->Mref;
+	double dKu    = 8e-5; //MuEparams->KerrRef;
+	double dMu    = 0; //MuEparams->MerrRef;
+	int sigmaLim  = 5; //MuEparams->rangeSigma;
+	int sigmaStep = 4; //MuEparams->divSigma;
 	int ngrid     = sigmaLim*sigmaStep*2 + 1;
 
 	cout<<"***** Template fit parameters: *****"<<endl;
