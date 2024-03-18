@@ -220,7 +220,7 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v3(TString angular_cuts, double lumi 
 	//	cout<<i<<") totEvents = "<<MuEparams->MCsums.Nevgen<<"   sigma0tot = "<<MuEparams->MCpargen.Wnorm<<endl;
 	//}
 	
-	TString logDir = "/afs/cern.ch/user/c/cez/eos/Storage/Simulation/MyHitSharing1/files";
+	TString logDir = "/afs/cern.ch/user/c/cez/eos/Storage/Simulation/MyHitSharing1/files/";
 	//TString fileLocation = "test_MuE_mesmer_events_exampleProductionJob_3cm_1708506156_1_40_results.root";
 	TString logfilename = "exampleProductionJob_3cm_1708506156_1/stat_";
 	//const char* logfile = "/scratch/cezhang/Simulation_3cm_HitSharing1/files/exampleProductionJob_3cm_1708536731_328.root_/stat"; 
