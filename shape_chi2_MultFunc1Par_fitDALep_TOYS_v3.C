@@ -229,8 +229,8 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v3(TString angular_cuts, double lumi 
 	std::string pattern1 = "Weights normalization"; 
 	std::string pattern2 = "CPU time to generate  ";
 	
-	sigma0_tot = SearchForPattern(filename, pattern1);
-	totalEvents = SearchForPattern(filename, pattern2);
+	sigma0_tot = SearchForPattern(logfile, pattern1);
+	totalEvents = SearchForPattern(logfile, pattern2);
 
 	cout<<"sigma0_tot: "<<sigma0_tot<<"; totalEvents: "<<totalEvents<<endl;
 
