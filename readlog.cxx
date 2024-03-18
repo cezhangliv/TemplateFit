@@ -56,17 +56,17 @@ double SearchForPattern(const char* filename, const std::string& pattern) {
 //    SearchForPattern(filename, pattern);
 //}
 
-/*
+
 void readlog() {
     
-    const char* filename = "/scratch/cezhang/Simulation_3cm_HitSharing1/files/exampleProductionJob_3cm_1708536731_328.root_/stat"; 
+    const char* filename = "/afs/cern.ch/user/c/cez/eos/Storage/Simulation/MyHitSharing1/files/exampleProductionJob_3cm_1708506156_1/stat_"; 
     
-    std::string pattern = "Weights normalization"; 
-    double weights = SearchForPattern(filename, pattern);
+    std::string pattern1 = "Weights normalization"; 
+    double weights = SearchForPattern(filename, pattern1);
     
-    std::string pattern = "CPU time to generate  ";
-    double Nevents = SearchForPattern(filename, pattern);
+    std::string pattern2 = "CPU time to generate  ";
+    double Nevents = SearchForPattern(filename, pattern2);
     
 }
-*/
+
 
