@@ -59,7 +59,7 @@ double SearchForPattern(const char* filename, const std::string& pattern) {
 
 void readlog() {
     
-    const char* filename = "/afs/cern.ch/user/c/cez/eos/Storage/Simulation/MyHitSharing1/files/exampleProductionJob_3cm_1708506156_1/stat_"; 
+    const char* filename = "/afs/cern.ch/user/c/cez/eos/Storage/Simulation/MyHitSharing1/files/exampleProductionJob_3cm_1708506156_1.root_/stat_"; 
     
     std::string pattern1 = "Weights normalization"; 
     double weights = SearchForPattern(filename, pattern1);
