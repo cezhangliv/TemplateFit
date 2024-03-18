@@ -30,7 +30,9 @@ R__LOAD_LIBRARY(/afs/cern.ch/user/c/cez/eos/Soft/mue/fairconvt/fair_to_mesmer/li
 #include "readlog.cxx"
 
 
-#define SAVE 1
+#define SAVE 0
+#define FIT 0
+
 
 const bool SMEARDATA = 1;
 const int MINPOINTS = 5;
@@ -451,7 +453,7 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v3(TString angular_cuts, double lumi 
 
 
 
-	if(NTOYS >= 50) {
+	if(NTOYS >= 50 && FIT) {
 		TFitResultPtr fitBestValues = hBestValues->Fit("fGaus", "S");//"ME"
 		bestFitPar  = fitBestValues->Parameter(1);
 		errorFitPar = fitBestValues->Parameter(2);
