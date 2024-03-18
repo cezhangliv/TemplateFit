@@ -329,7 +329,7 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v3(TString angular_cuts, double lumi 
 	t.Start();
 	
 	TFile *outfile;
-	TString outfilename = Form("shape_fitDALep_TRLumi%1.0fpb-1_Iparam%i_NTOYS%i_", lumi, iparam, NTOYS) + angular_cuts + "_v2.root";
+	TString outfilename = Form("shape_fitDALep_TRLumi%1.0fpb-1_Iparam%i_NTOYS%i_", lumi, iparam, NTOYS) + angular_cuts + "_v3.root";
 	TH1D *hChi2min        = new TH1D("hChi2min", Form("#chi^{2}_{min} distribution; #chi^{2}; Entries"), 1000, 0, expectedNDF*1.5);
 	TH1D *hChi2Reducedmin = new TH1D("hChi2Reducedmin", Form("reduced #chi^{2}_{min} distribution; #chi^{2}/ndf; Entries"), 1000, 0, 5);
 	TH1D *hBestValues     = new TH1D("hBestValues", Form("FitParBest distribution (#chi^{2} minimzation of %i toys); FitPar", NTOYS),
