@@ -56,7 +56,7 @@ double SearchForPattern(const char* filename, const std::string& pattern) {
 //    SearchForPattern(filename, pattern);
 //}
 
-
+/*
 void readlog() {
     
     const char* filename = "/scratch/cezhang/Simulation_3cm_HitSharing1/files/exampleProductionJob_3cm_1708536731_328.root_/stat"; 
@@ -68,5 +68,5 @@ void readlog() {
     double Nevents = SearchForPattern(filename, pattern);
     
 }
-
+*/
 
