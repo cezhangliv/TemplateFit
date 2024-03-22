@@ -161,6 +161,7 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v3(TString angular_cuts, double lumi 
 
 	//get the pseudodata histogram
 	TH2D *hn_thmuVsthe_NLO_ref = (TH2D*) infile->Get(dir_reference);
+	cout<<hn_thmuVsthe_NLO_ref->GetEntries()<<endl;
 	//get the hadronic histogram
 	TH2D *hn_thmuVsthe_NLO_had = (TH2D*) infile->Get(dir_had);
 	//get the templates
