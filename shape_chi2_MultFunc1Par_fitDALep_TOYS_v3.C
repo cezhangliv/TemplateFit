@@ -91,7 +91,7 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v3(TString angular_cuts, double lumi 
 	//TString mainDir = "/afs/cern.ch/user/c/cez/eos/Storage/Simulation/MyHitSharing1_Cvt/";
 	//TString fileLocation = "test_MuE_mesmer_events_exampleProductionJob_3cm_1708506156_1_40_results.root";
 	//TString fileLocation = "mesmer_events_exampleProductionJob_2cm_1710872204_1.root";
-	TString fileLocation = "resutls.root";
+	TString fileLocation = "results.root";
 	//"/MuE/results.root";
 	TString dirData = mainDir + fileLocation;//mainDir + Form("/iparam%i/statFit_DALep_Iparam%i_seed1-10/", iparam, iparam) + fileLocation;
 
