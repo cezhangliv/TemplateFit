@@ -56,7 +56,7 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v3(TString angular_cuts, double lumi 
 
 	//some settings related to data selection
 	Double_t NentriesCut = 0;
-	Double_t RelativeUncertaintyCut = 0;
+	Double_t RelativeUncertaintyCut = 1;
 	Int_t    energyCut = 0;
 
 
