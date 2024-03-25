@@ -30,8 +30,8 @@ R__LOAD_LIBRARY(/afs/cern.ch/user/c/cez/eos/Soft/mue/fairconvt/fair_to_mesmer/li
 #include "readlog.cxx"
 
 
-#define SAVE 0
-#define FIT 0
+#define SAVE 1
+#define FIT 1
 
 
 const bool SMEARDATA = 1;
@@ -165,6 +165,7 @@ void shape_chi2_MultFunc1Par_fitDALep_TOYS_v3(TString angular_cuts, double lumi 
 	//get the hadronic histogram
 	TH2D *hn_thmuVsthe_NLO_had = (TH2D*) infile->Get(dir_had);
 	//get the templates
+
 	std::vector<TH2D*> hn_thmuVsthe_NLO_templ;
 	for (int iK = 0; iK < ngrid; iK++) {
 		TString histo_templ = dir_templ + Form("_FitPar%i", iK);
